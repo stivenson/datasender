@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('results','ResultController@index');
+Route::get('lotteries','LotteryController@index');
+Route::post('import_result','ResultController@import');

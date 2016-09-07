@@ -12,7 +12,7 @@ class Result extends Model
 {
     use SoftDeletes;
 
-    protected $table = 'lotteries';
+    protected $table = 'results';
 
     public $timestamps = true;
 
