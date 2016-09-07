@@ -7,7 +7,8 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
-        "maatwebsite/excel": "~2.1.0"
+        "maatwebsite/excel": "~2.1.0",
+        "laravelcollective/bus": "^5.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -22,7 +23,10 @@
         ],
         "psr-4": {
             "datasender\\": "app/",
-            "Models\\": "app/Models"
+            "Models\\": "app/Models",
+            "Helpers\\":"app/Helpers",
+            "Repositories\\":"app/Repositories",
+            "Abstracts\\":"app/Abstracts"
         }
     },
     "autoload-dev": {
