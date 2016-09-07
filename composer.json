@@ -21,7 +21,8 @@
             "database"
         ],
         "psr-4": {
-            "datasender\\": "app/"
+            "datasender\\": "app/",
+            "Models\\": "app/Models"
         }
     },
     "autoload-dev": {
