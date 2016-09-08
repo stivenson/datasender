@@ -7,4 +7,14 @@ class ResultRepository extends AbstractRepository implements ResultRepositoryInt
 
   protected $modelClassName = 'Models\Result';
 
+
+  public function allOfLottery($idLottery,$columns = array('*'))
+  {
+    $className = '\\'.$this->modelClassName; 
+    $arr = $className::orderBy('id','DESC')->where('lottery_id',$idLottery)->select($columns)->get();
+    return $arr;
+  }
+
+
+
 }

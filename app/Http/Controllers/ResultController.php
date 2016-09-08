@@ -37,6 +37,12 @@ class ResultController extends Controller
     return \Response::json($list, 200);
   }
 
+  // get with filter
+  public function indexOfLottery($idLottery){
+    $list = $this->repo->allOfLottery($idLottery);
+    return \Response::json($list, 200);
+  }
+
 
   // post
   public function import(RepoLottery $repolottery){

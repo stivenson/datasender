@@ -23,5 +23,10 @@ class LotteryController extends Controller
     return \Response::json($list, 200);
   }
 
+  public function show($id){
+    $item = $this->repo->find($id);
+    return \Response::json($item, 200);
+  }
+
 
 }

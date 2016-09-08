@@ -16,5 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('results','ResultController@index');
+Route::get('results/lottery/{idLottery}','ResultController@indexOfLottery');
+
 Route::get('lotteries','LotteryController@index');
+Route::get('lotteries/{id}','LotteryController@show');
 Route::post('import_result','ResultController@import');
